@@ -1,0 +1,10 @@
+
+.idea/.gitignore
+.idea/compiler.xml
+.idea/inspectionProfiles/
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/vcs.xml
+design-patterns.iml
+target
+
