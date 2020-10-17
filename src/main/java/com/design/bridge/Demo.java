@@ -5,7 +5,7 @@ import com.design.bridge.devices.impl.Radio;
 import com.design.bridge.devices.impl.Tv;
 import com.design.bridge.remotes.impl.AdvancedRemote;
 import com.design.bridge.remotes.impl.BasicRemote;
-
+//设备和远程控制之间的桥接
 public class Demo {
     public static void main(String[] args) {
         testDevice(new Tv());
