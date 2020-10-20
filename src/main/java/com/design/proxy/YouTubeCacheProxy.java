@@ -5,6 +5,7 @@ import com.design.proxy.some_cool_media_library.ThirdPartyYouTubeLib;
 import com.design.proxy.some_cool_media_library.Video;
 
 import java.util.HashMap;
+
 //代理类
 public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
     private ThirdPartyYouTubeLib youtubeService;
@@ -20,7 +21,7 @@ public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
         if (cachePopular.isEmpty()) {
             cachePopular = youtubeService.popularVideos();
         } else {
-            System.out.println("Retrieved list from cache.");
+            System.out.println("从缓存中查找信息");
         }
         return cachePopular;
     }
@@ -32,7 +33,7 @@ public class YouTubeCacheProxy implements ThirdPartyYouTubeLib {
             video = youtubeService.getVideo(videoId);
             cacheAll.put(videoId, video);
         } else {
-            System.out.println("Retrieved video '" + videoId + "' from cache.");
+            System.out.println("从缓存中获取视频 " + videoId);
         }
         return video;
     }
